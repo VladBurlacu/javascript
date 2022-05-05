@@ -13,7 +13,8 @@
 
     let btn = document.getElementById("run");
 
-    btn.addEventListener('click',calculateAge);
+    btn.addEventListener('click', calculateAge);
+
     function calculateAge() {
 
         let d1 = document.getElementById(`dob-day`).value;
@@ -41,12 +42,6 @@
         let m = m2 - m1;
         let y = y2 - y1;
 
-        alert('Your Age is '+y+' Years ' + m + ` Months ` + d + ` Days`);
-
-
+        alert('Your Age is ' + y + ' Years ' + m + ` Months ` + d + ` Days`);
     }
-
-
-    // your code here
-
 })();
