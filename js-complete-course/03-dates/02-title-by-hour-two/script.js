@@ -11,6 +11,14 @@
 
 (function() {
 
+    const date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    if (hours < 18 && minutes <=30) {
+        document.getElementById(`target`).innerHTML = "Hello!";
+    } else {
+        document.getElementById(`target`).innerHTML = "Good evening!";
+    }
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
