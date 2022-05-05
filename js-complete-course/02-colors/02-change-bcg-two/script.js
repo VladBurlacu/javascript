@@ -9,8 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    // your code here
+(function () {
 
+    let btn = document.getElementById(`run`);
+    let inputColor = document.getElementById(`color`);
+
+    btn.addEventListener('click', changeBgColor);
+
+    function changeBgColor() {
+        document.body.style.backgroundColor = inputColor.value;
+    }
 })();

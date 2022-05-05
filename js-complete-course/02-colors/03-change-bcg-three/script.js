@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
-
+    let btn = document.getElementById(`run`).onclick = randomBg;
+    let hex = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+    let preFix = '#';
+    const hexLength = 6;
+    function randomBg(){
+        let newColor = preFix;
+        for(i = 0; i < hexLength; i++){
+            newColor += hex[Math.floor(Math.random()*hex.length)]
+        }
+        document.body.style.backgroundColor = newColor;
+    }
 })();
