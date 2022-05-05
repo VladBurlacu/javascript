@@ -9,8 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+let name = prompt("What's your name? ");
 
-    // your code here
+function heyYou() {
+    alert("Hello " + name);
 
-})();
+}
+
+heyYou();

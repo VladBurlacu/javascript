@@ -7,10 +7,18 @@
  */
 
 // NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
+// You will have time to focus on it later. age gender town
 
-(function() {
 
-    // your code here
 
-})();
+function  ageGenderTown() {
+    let q1 = window.prompt(" Age: ");
+    let q2 = window.prompt(" Gender: ");
+    let q3 = window.prompt(" Town: ");
+    let confirmation = confirm(q1 + " " + q2 + " " + q3);
+    if (confirmation === false) {
+         ageGenderTown();
+    }
+}
+
+ageGenderTown();

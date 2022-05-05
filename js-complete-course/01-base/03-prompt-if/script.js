@@ -9,8 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+let question = prompt("Psst want some candeh? ");
 
-  // your code here
+function answer() {
+    if (question=== "yes") {
+        alert("Congrats!")
+    }
+        else {
+            alert("More candeh for me then!")
+    }
+}
 
-})();
+answer();
