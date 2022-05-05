@@ -11,6 +11,18 @@
 
 (function() {
 
+    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const date = new Date();
+
+    let day = weekDays[date.getDay()];
+    let month = months[date.getMonth()];
+    let hour = date.getHours();
+    let minutes = date.getMinutes();
+
+    document.getElementById(`target`).innerHTML = day + " " + date.getDate() + " " + month + " " + date.getFullYear() + " " + hour + "h" + minutes;
+
+
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
