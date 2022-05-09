@@ -13,6 +13,24 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     var performOperation = function(operation) {
+
+        const firstNum = parseInt(document.getElementById('op-one').value);
+        const secondNum = parseInt(document.getElementById('op-two').value);
+
+        switch (operation) {
+            case `addition`:document.getElementById('target').innerHTML = `${firstNum} + ${secondNum} = ${firstNum + secondNum}`;
+                break;
+            case `substraction`:document.getElementById('target').innerHTML = `${firstNum} - ${secondNum} = ${firstNum - secondNum}`;
+                break;
+            case `multiplication`: document.getElementById('target').innerHTML = `${firstNum} * ${secondNum} = ${firstNum * secondNum}`;
+                break;
+            case `division`: document.getElementById('target').innerHTML = `${firstNum} / ${secondNum} = ${firstNum / secondNum}`;
+                break;
+        }
+
+
+
+
         // perform the operation
     };
 
