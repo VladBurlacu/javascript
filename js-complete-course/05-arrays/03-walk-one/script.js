@@ -28,4 +28,6 @@
 
     // your code here
 
+    fruits.forEach((fruit) => console.log(fruit));
+
 })();
