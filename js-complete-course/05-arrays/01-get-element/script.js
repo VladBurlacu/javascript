@@ -27,5 +27,6 @@
     ];
 
     // your code here
+    console.log(fruits[4]);
 
 })();
