@@ -13,6 +13,12 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
+        const target = document.getElementById('target');
+
+        for (i = 1; i <= 21; i++) {
+            console.log(i*i);
+        }
+
         // your code here
 
     });
