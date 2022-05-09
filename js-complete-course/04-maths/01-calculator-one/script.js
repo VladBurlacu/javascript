@@ -13,18 +13,34 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("addition").addEventListener("click", function() {
+        const firstNr = parseInt(document.getElementById(`op-one`).value);
+        const secondNr = parseInt(document.getElementById(`op-two`).value);
+
+        document.getElementById('target').innerHTML = firstNr + " + " + secondNr + " = " + (firstNr + secondNr);
         // perform an addition
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
+        const firstNr = parseInt(document.getElementById(`op-one`).value);
+        const secondNr = parseInt(document.getElementById(`op-two`).value);
+
+        document.getElementById('target').innerHTML = firstNr + " - " + secondNr + " = " + (firstNr - secondNr);
         // perform an substraction
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
+        const firstNr = parseInt(document.getElementById(`op-one`).value);
+        const secondNr = parseInt(document.getElementById(`op-two`).value);
+
+        document.getElementById('target').innerHTML = firstNr + " * " + secondNr + " = " + (firstNr * secondNr);
         // perform an multiplication
     });
 
     document.getElementById("division").addEventListener("click", function() {
+        const firstNr = parseInt(document.getElementById(`op-one`).value);
+        const secondNr = parseInt(document.getElementById(`op-two`).value);
+
+        document.getElementById('target').innerHTML = firstNr + " / " + secondNr + " = " + (firstNr / secondNr);
         // perform an division
     });
 })();
