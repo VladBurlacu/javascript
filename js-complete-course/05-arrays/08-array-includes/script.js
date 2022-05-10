@@ -28,4 +28,12 @@
 
     // your code here
 
+    document.getElementById('run').addEventListener('click', () => {
+        if(fruits.indexOf(`apple`) !== -1) {
+            console.log(`There is an apple in the array`)
+        } else {
+            console.log(`There is no apple in the array`)
+        }
+    })
+
 })();
