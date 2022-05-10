@@ -11,6 +11,8 @@
 
 (function() {
 
+    this.target.innerHTML = `owned`;
+
     // your code here
 
 })();
