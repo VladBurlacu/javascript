@@ -29,4 +29,14 @@
     ];
 
     // your code here
+
+    document.getElementById('run').addEventListener('click', () => {
+        let uniqueFruits = [];
+        fruits.forEach((c) => {
+            if (!uniqueFruits.includes(c)) {
+                uniqueFruits.push(c);
+            }
+        });  console.log(uniqueFruits);
+    })
+
 })();
