@@ -89,6 +89,17 @@
         },
     ];
 
+
+    document.getElementById('run').addEventListener('click', () => {
+
+        const peopleOver18 = people.filter((person) => {
+                return person.age >= 18;
+            }
+        );
+
+        console.log(peopleOver18);
+    })
+
     // your code here
 
 })();
