@@ -13,4 +13,8 @@
 
     // your code here
 
+    Array.from(document.getElementsByClassName(`target`)).forEach(element =>{
+        element.innerHTML='owned';
+    })
+
 })();
