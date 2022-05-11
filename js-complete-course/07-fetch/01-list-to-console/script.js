@@ -9,6 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
 (() => {
+    document.getElementById("run").addEventListener("click", () => {
+        fetch("../../_shared/api.json")
+            .then(res => res.json())
+            .then(data => console.log(data));
+    });
+
     // your code here
 })();
