@@ -11,6 +11,30 @@
 
 (function() {
 
+
+    let table = document.createElement(`table`);
+
+    for(i = 0; i < 10; i++){
+        table.insertRow().innerHTML = `Row number: ${i+1}`
+
+    }
+    const tableRows = Array.from(table.getElementsByTagName('tr'))
+
+    tableRows.forEach(row => {
+        for (i = 0; i < 10; i++) {
+            row.insertCell()
+        }
+    });
+
+    for(rowCount=0; rowCount < tableRows.length; rowCount++){
+        const currentRow = tableRows[rowCount];
+        const currentRowValue = currentRow.innerText;
+        for(cellCount=0;cellCount<currentRow.cells.length;cellCount++){
+            const currentCell = currentRow.cells.item(cellCount);
+            currentCell.innerHTML = `* ${cellCount+1} = ${currentRowValue*(cellCount+1)}`;
+        }
+    }
+    document.getElementById('target').appendChild(table)
     // your code here
 
 })();
